@@ -11,29 +11,66 @@
     <h1>Richard's Portfolio Site</h1>
     <nav>
         <ul id="navbar">
-            <li class="navlinks" href="">Bio </li>
-            <li class="navlinks" href="">Portfolio </li>
-            <li class="navlinks" href="">Contact </li>
+            <li class="navlinks"><a href="#bio">Bio</a></li>
+            <li class="navlinks"><a href="#target">Portfolio</a></li>
+            <li class="navlinks"><a href="#ContactDetails">Contact</a></li>
         </ul>
     </nav>
     </header>
-    <section class="bio">
+    <section class="bio" id="bio">
         <h2>Personal biography</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ullam deleniti recusandae aut. Illum quis voluptatem consectetur eum, perspiciatis dolores sint rem fuga, aspernatur molestiae asperiores! Maxime aperiam porro autem.
         Quam impedit cum, ratione officia nihil reiciendis pariatur sed? Quaerat nisi iste praesentium corporis? Inventore molestias illo quos debitis placeat reiciendis nobis, quam, id, corporis facere sunt laborum dolore quod!</p>
     </section>
     <img src="./assets/7294809.jpg" alt="profile avatar">
-    <aside class="goals">
-        <div class="personal-goals">
-            <!-- Target icon downloaded from: <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Tanah Basah - Flaticon</a> -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, qui similique maxime, error doloribus at voluptatibus molestiae corporis distinctio accusamus ex consequuntur? Eligendi tempora odio ullam, maxime odit impedit consequatur!</p>
+    <main class="bodyflex">
+        <aside class="goals">
+            <h2>Goals</h2>
+            <div class="personal-goals">
+                <!-- Target icon downloaded from: <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Tanah Basah - Flaticon</a> -->
+                <img src="./assets/target.png" alt="Target icon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, qui similique maxime, error doloribus at voluptatibus molestiae corporis distinctio accusamus ex consequuntur? Eligendi tempora odio ullam, maxime odit impedit consequatur!</p>
+            </div>
+            <div class="professional-goals">
+                <!-- Goal icon downloaded from: <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Uniconlabs - Flaticon</a> -->
+                <img src="./assets/objective.png" alt="Target connected to multiple goals" id="target">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quo sit tenetur neque voluptate laboriosam nihil beatae nostrum asperiores, id harum optio voluptas amet similique corporis veniam dolorum alias eaque!</p>
+            </div>
+        </aside>
+        <div class="projflex">
+            <section class="Proj-Card MainProj">
+                <h3>Initial Project</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt eum error maxime! Qui enim dicta impedit, maxime quidem voluptate accusamus placeat quos sunt quaerat provident. Ullam similique aperiam sequi!</p>
+            </section>
+            <section class="Proj-Card OtherProj" >
+                <h3 class="Row2Head">Project 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt eum error maxime! Qui enim dicta impedit, maxime quidem voluptate accusamus placeat quos sunt quaerat provident. Ullam similique aperiam sequi!</p>
+            </section>
+            <section class="Proj-Card OtherProj">
+                <h3 class="Row2Head">Project 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt eum error maxime! Qui enim dicta impedit, maxime quidem voluptate accusamus placeat quos sunt quaerat provident. Ullam similique aperiam sequi!</p>
+            </section>
+            <section class="Proj-Card OtherProj">
+                <h3 class="Row3Head">Project 4</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt eum error maxime! Qui enim dicta impedit, maxime quidem voluptate accusamus placeat quos sunt quaerat provident. Ullam similique aperiam sequi!</p>
+            </section>
+            <section class="Proj-Card OtherProj">
+                <h3 class="Row3Head">Project 5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt eum error maxime! Qui enim dicta impedit, maxime quidem voluptate accusamus placeat quos sunt quaerat provident. Ullam similique aperiam sequi!</p>
+            </section>
         </div>
-        <div class="professional-goals">
-            <!-- Goal icon downloaded from: <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Uniconlabs - Flaticon</a> -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quo sit tenetur neque voluptate laboriosam nihil beatae nostrum asperiores, id harum optio voluptas amet similique corporis veniam dolorum alias eaque!</p>
-        </div>
-    </aside>
-
+    </main>
+    <footer>
+        <h4>Contact: </h4>
+        <address>
+            <ul id="ContactDetails">
+                <li><a href="mailto:noone@nowhere.com">Email</a></li>
+                <li><a href="tel:(000)555-555">Phone (00)555-555</a></li>
+                <li><a href=""><img src="" alt="Facebook"></a>Facebook</li>
+                <li><a href=""><img src="" alt="WhatsApp"></a>WhatsApp</li>
+            </ul>
+        </address>
+    </footer>
     
 </body>
 </html>
