@@ -22,10 +22,11 @@ header {
    display: flex;
     background-color: var(--main-color);
     border: 1px solid black;
-    border-radius: 40px;
+    border-radius: 15px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    background: linear-gradient(0.25turn, var(--main-color), 80%, rgb(94, 94, 249));
 }
 
 h1 {
@@ -38,19 +39,24 @@ h1 {
 
 #navbar {
     float: right;
-    width: 340px;
+    width: 400px;
     display: flex;
-    justify-content: space-around; 
+    justify-content:space-evenly; 
        
 }
 #navbar li {
-    width: 100px;
     list-style-type: none;
+    
     }
 
 .navlinks a {
     color: var(--text-white);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
 }
 
 #bio-container {
@@ -114,14 +120,22 @@ h1 {
     padding: 12px;
     margin: 5px;
     border: 5px solid var(--border-color);
+    
 }
 
 .MainProj {
     flex: 2 2 1000px;
+        
 }
 
 .OtherProj {
     flex: 1 1 450px;
+}
+
+.MainProj h3 {
+    position: absolute;
+    bottom: 15px;
+    
 }
 
 footer {
@@ -146,7 +160,13 @@ footer img {
 
 #ContactDetails a {
     color: var(--text-white);
+
 }
+
+#ContactDetails a:hover {
+    color: orange;
+}
+
 
 address li {
     display: inline-block;
