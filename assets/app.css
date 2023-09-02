@@ -6,6 +6,18 @@
     --text-white: #e0f9ff;
 }
 
+* {
+    font-family: Montserrat, sans-serif ;
+    
+}
+
+body { 
+    background-color: var(--main-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: Heebo, Montserrat, sans-serif;
+}
 header {
    display: flex;
     background-color: var(--main-color);
