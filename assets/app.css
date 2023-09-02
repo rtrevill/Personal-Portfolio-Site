@@ -33,18 +33,24 @@ h1 {
     display: inline-block;
     width: 350px;
     margin-left: 30px;
-   
+
 }
 
 #navbar {
     float: right;
     width: 340px;
     display: flex;
-    justify-content: space-around;     
+    justify-content: space-around; 
+       
 }
 #navbar li {
     width: 100px;
     list-style-type: none;
+    }
+
+.navlinks a {
+    color: var(--text-white);
+    font-size: 1.3rem;
 }
 
 #bio-container {
