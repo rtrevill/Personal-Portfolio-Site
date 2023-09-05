@@ -43,7 +43,7 @@ header {
 h1 {
     color: rgb(54, 8, 8);
     display: block;
-    width: 500px;
+    width: 550px;
     margin: 0 0 0 50px;
     padding: 40px;
     z-index: 2;
@@ -54,7 +54,7 @@ h1 {
 
 h2 {
     color: rgb(54, 8, 8);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px rgb(170, 154, 175);
 }
 
@@ -87,14 +87,15 @@ h4 {
     height: 120px;
     width: 100%;
     position: relative;
-    background-image: url(../Pictures/replacement-pictures/sean-sinclair-C_NJKfnTR5A-unsplash.jpg);
-    background-size: 100% 120px;   
+    background-image: url(../Pictures/replacement-pictures/ashim-d-silva-WeYamle9fDM-unsplash.jpg);
+    background-size: 100% 300px;
+    background-position: bottom 100px;   
 
 }
 
 .sub-Header::before {
     /* The following code take from https://stackoverflow.com/questions/8195215/css-background-image-on-background-color */
-    background-color: rgba(94, 43, 100, 0.2);
+    background-color: rgba(101, 91, 102, 0.2);
     content: '';
     display: block;
     height: 100%;
@@ -175,6 +176,9 @@ h4 {
     width: 25%;
     margin: 5px 0;
     background-color: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .goals div {
@@ -184,10 +188,21 @@ h4 {
 
 .goal-icon {
     display: block;
-    width: 20%;
+    width: 30%;
     margin: 0 auto;
 }
 
+.goals ul {
+    text-align: left;
+}
+
+.goals li {
+    padding: 0 10px;
+}
+
+.goals h2 {
+    text-decoration: underline;
+}
 .flexContainer {
     display: inline-block;
     width: 74%;
@@ -196,7 +211,7 @@ h4 {
 .projflex {
     display: flex;
     flex-wrap: wrap;
-    flex: 2 2 1000px;
+    width: 96%;
     padding: 0 30px;
     justify-content: space-around;
     align-content: flex-start;
@@ -206,6 +221,7 @@ h4 {
 .Proj-Card {
     /* box-sizing: border-box; */
     /* height: 200px; */
+    box-sizing: border-box;
     padding: 0;
     margin: 5px;
     border-left: 5px solid var(--border-color);
@@ -224,7 +240,7 @@ h4 {
 }
 
 .MainProj {
-    flex: 3 1 800px;
+    flex: 3 2 800px;
     font-size: 1.3rem;
     min-width: 200px;
     overflow: clip;
@@ -242,6 +258,7 @@ h4 {
     background-size:300%;
     overflow: auto;
     z-index: 2;
+    opacity: 0.8;
         
 }
 h3 {
@@ -258,7 +275,7 @@ h3 {
 
 .OtherProj {
     padding: 0;
-    flex: 1 1 450px;
+    flex: 1 1 400px;
     font-size: 1.1rem;
     
 
