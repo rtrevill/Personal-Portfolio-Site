@@ -69,8 +69,17 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items:flex-start;
-    background-color: var(--main-color);
+    background-color: white;
     margin: 0 5px;
+} 
+
+.aboutMe{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-right: 4px solid var(--border-color);
 }
 
 .bio {
@@ -82,22 +91,22 @@ h1 {
 }
 
 #avatar {
+    display: flex;
     margin: 0 20px;
     width: 35%;
-    flex: 1 0 300px;
+    flex: 0 0 400px;
     border-left: 4px dotted black;
 }
 
 .bodyflex {
     display: flex;
-    justify-content: space-around;
 }
 
-.goals {
-    flex: 1 1 400px;
+.goals {  
+    display: inline-block;
     border-right: 5px solid var(--border-color);
     text-align: center;
-    max-width: 500px;
+    width: 25%;
     margin: 5px 0;
     background-color: white;
 }
@@ -113,23 +122,30 @@ h1 {
     margin: 0 auto;
 }
 
+.flexContainer {
+    display: inline-block;
+    width: 74%;
+
+}
 .projflex {
     display: flex;
     flex-wrap: wrap;
     flex: 2 2 1000px;
     padding: 0 30px;
     justify-content: space-around;
+    align-content: flex-start;
+    
 }
 
 .Proj-Card {
     /* box-sizing: border-box; */
     /* height: 200px; */
-    padding: 12px;
+    padding: 0;
     margin: 5px;
     border: 5px solid var(--border-color);
     position: relative;
     background-color: white;
-    z-index: 1;
+    /* z-index: 1; */
     max-height: 390px;
     
 }
@@ -142,6 +158,8 @@ h1 {
 .MainProj {
     flex: 3 1 800px;
     font-size: 1.3rem;
+    min-width: 200px;
+    overflow: clip;
     
 }
 
@@ -192,6 +210,7 @@ h3 {
 #Proj3 img{
     display: block;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     }
 
@@ -204,6 +223,7 @@ h3 {
     background-color: #0765A2; */
     display: block;
     width: 90%;
+    height: 100%;
     /* max-width: 200px; */
     margin: 0 auto;
 }
@@ -217,6 +237,7 @@ h3 {
     background-color: #D1D1D1; */
     display: block;
     width: 100%;
+    height:100%;
      /* max-width: 200px; */
     margin: 0 auto;
 }
