@@ -122,27 +122,77 @@ a:hover {
     margin: 5px;
     border: 5px solid var(--border-color);
     position: relative;
+    background-color: white;
     
 }
 
 .MainProj {
     flex: 3 1 800px;
     font-size: 1.3rem;
+    
 }
 
-.MainProj h3 {
+.heading-box {
     position: absolute;
-    bottom: -20px;
+    bottom: -9px;
+    left: -30px;
+    border: 1px solid black;
+    padding: 0;
+    background-image: url(../Pictures/mitchell-luo-i1O_Hr6cbWc-unsplash.jpg);
+    background-size:300%;
+    overflow: auto;
+    z-index: 1;
+}
+h3 {
+   padding: 7px 20px;
+    margin: 0;
+    color: white;
+    opacity: 0.9;
+    
 }
 
 .OtherProj {
+
     flex: 1 1 450px;
+    font-size: 1.1rem;
 }
 
-.trial-box {
-    position: relative;
+#Proj1 img {
+    width: 100%;
+    max-width: 1000px;
+    }
+#Proj2 {
+    background-image: url(../Pictures/pexels-nataliya-vaitkevich-4772868.jpg) ;
+    background-size: auto 140%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+#Proj3 {  
+    background-image: url(../Pictures/pexels-miguel-á-padriñán-1061140.jpg) ;
+    background-size: auto 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F76E37;
+    }
+
+#Proj4 {
+    background-image: url(../Pictures/david-pisnoy-S_ao-YqXl2w-unsplash.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0765A2;
+}
+
+#Proj5 {
+    background-image: url(../Pictures/anne-nygard-FTc0e1zLwzU-unsplash.jpg);
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -50px;
+    background-color: #D1D1D1;
+}
+/* 
 
 footer {
     background-color: #766d91;
