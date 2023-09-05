@@ -48,12 +48,19 @@ h1 {
     padding: 40px;
     z-index: 2;
     font-size: 3rem;
+    /* text-shadow: 4px 4px 4px 4px pink; */
+    text-shadow: rgb(199, 243, 191) 2px 1px 10px;
 }
 
 h2 {
     color: rgb(54, 8, 8);
     font-size: 2rem;
-    
+    text-shadow: 2px 2px rgb(170, 154, 175);
+}
+
+h4 {
+    font-size: 1.6rem;
+    letter-spacing: 1.4;
 }
 
 
@@ -81,8 +88,18 @@ h2 {
     width: 100%;
     position: relative;
     background-image: url(../Pictures/replacement-pictures/sean-sinclair-C_NJKfnTR5A-unsplash.jpg);
-    background-size: 100% 120px;
+    background-size: 100% 120px;   
 
+}
+
+.sub-Header::before {
+    /* The following code take from https://stackoverflow.com/questions/8195215/css-background-image-on-background-color */
+    background-color: rgba(94, 43, 100, 0.2);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 .sub-Header img {
@@ -128,9 +145,19 @@ h2 {
 }
 
 #break {
+    display: block;
     height: 40px;
-    background-color: aquamarine;
+    background-color: rgb(46, 115, 128);
     width: 100%;
+}
+
+#break h2 {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--text-white);
+    text-shadow: 3px 3px black;
+    line-height: 40px;
 }
 
 .bodyflex {
@@ -184,8 +211,8 @@ h2 {
     border-left: 5px solid var(--border-color);
     border-top: 5px solid var(--border-color);
     position: relative;
-    background-color: white;
-    /* z-index: 1; */
+    background-color: rgba(255,255,255,0.3);
+     /* z-index: 1; */
     max-height: 390px;
     
     
@@ -287,10 +314,12 @@ h3 {
 }
 
 
-/* 
+ 
 
 footer {
     background-color: #766d91;
+    opacity: 0.75;
+
 }
 
 h4 {
@@ -302,6 +331,7 @@ h4 {
 footer img {
     width: 30px;
     height: 30px;
+    opacity: 1;
 }
 
 #ContactDetails {
@@ -311,7 +341,7 @@ footer img {
 
 #ContactDetails a {
     color: var(--text-white);
-
+    font-weight: 700;
 }
 
 #ContactDetails a:hover {
