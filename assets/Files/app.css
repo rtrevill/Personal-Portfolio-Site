@@ -86,7 +86,7 @@ h4 {
 
 .sub-Header {
     display: block;
-    height: 120px;
+    height: 200px;
     width: 100%;
     position: relative;
     background-image: url(../Pictures/replacement-pictures/ashim-d-silva-WeYamle9fDM-unsplash.jpg);
@@ -106,7 +106,7 @@ h4 {
 }
 
 .sub-Header img {
-    height: 120px;
+    height: 500px;
     width: 100%;
     position: absolute;
     opacity: 0.5;
@@ -160,7 +160,7 @@ h4 {
 }
 
 #break h2 {
-    width: 500px;
+    width: 380px;
     text-align: center;
     margin: 0 auto;
     color: var(--text-white);
@@ -291,8 +291,10 @@ h3 {
 #Proj1 img {
     display: block;
     height: 100%;
-    max-width: 1000px;
+    
     margin: 0 auto;
+    
+    
     }
 
 #Proj2 img {
@@ -389,12 +391,12 @@ address li {
     .professional-goals{
         width: 50%;   
     }
-}
+
 
 @media screen and (max-width: 850px){
 h1 {
     display: block;
-    width: 400px;
+    width: 380px;
     font-size: 2.5rem;
     padding: 0;
     margin: 0 auto;
@@ -402,10 +404,19 @@ h1 {
     line-height: 60px;
 }
 
+.sub-Header{
+    height: 120px;
+}
+
 header {
     position: sticky;
     top: 2px;
     z-index: 3;
+}
+#Proj1 img {
+    width: 100%;
+    height: 100%;
+}
 }
 }
 
