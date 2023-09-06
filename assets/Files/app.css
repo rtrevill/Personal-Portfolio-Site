@@ -4,6 +4,7 @@
     --main-color: #A9D2FE;
     --border-color: rgb(57, 12, 12);
     --text-white: #e0f9ff;
+    --heading-color: rgb(54, 8, 8);
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body { 
-    
+    /* Photo by Matt Palmer on Unsplash  */
     background-image: url(../Pictures/matt-palmer-WHJ1VaQpPsg-unsplash.jpg);
 }
 
@@ -41,7 +42,7 @@ header {
 
 
 h1 {
-    color: rgb(54, 8, 8);
+    color: var(--heading-color);
     display: inline-block;
     width: 750px;
     margin: 0 0 0 50px;
@@ -54,7 +55,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(54, 8, 8);
+    color: var(--heading-color);
     font-size: 2.5rem;
     text-shadow: 2px 2px rgb(170, 154, 175);
     margin-left: 8px;
@@ -75,7 +76,7 @@ h4 {
 }
 #navbar li {
     list-style-type: none;
-    
+    font-weight: 700; 
     }
 
 .navlinks a {
@@ -89,9 +90,10 @@ h4 {
     height: 200px;
     width: 100%;
     position: relative;
+    /* Photo by Ashim D’Silva on Unsplash  */
     background-image: url(../Pictures/replacement-pictures/ashim-d-silva-WeYamle9fDM-unsplash.jpg);
-    background-size: 100% 300px;
-    background-position: bottom 100px;   
+    background-size: cover;
+    /* background-position: bottom 200px;    */
 
 }
 
@@ -105,19 +107,12 @@ h4 {
     width: 100%;
 }
 
-.sub-Header img {
-    height: 500px;
-    width: 100%;
-    position: absolute;
-    opacity: 0.5;
-}
-
 #bio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.2);
     margin: 0 5px;
 } 
 
@@ -222,12 +217,9 @@ h4 {
     padding: 0 30px;
     justify-content: space-around;
     align-content: flex-start;
-    
 }
 
 .Proj-Card {
-    /* box-sizing: border-box; */
-    /* height: 200px; */
     box-sizing: border-box;
     padding: 0;
     margin: 5px;
@@ -235,7 +227,6 @@ h4 {
     border-top: 5px solid var(--border-color);
     position: relative;
     background-color: rgba(255,255,255,0.3);
-     /* z-index: 1; */
     max-height: 390px;
     
     
@@ -261,7 +252,8 @@ h4 {
     left: 0px;
     border: 1px solid black;
     padding: 0;
-    background-image: url(../Pictures/mitchell-luo-i1O_Hr6cbWc-unsplash.jpg);
+    /* Photo by Mitchell Luo on Unsplash  */
+    background-image: url(../Pictures/replacement-pictures/mitchell-luo-i1O_Hr6cbWc-unsplash.jpg);
     background-size:300%;
     overflow: auto;
     z-index: 2;
@@ -272,7 +264,7 @@ h3 {
    padding: 7px 20px;
     margin: 0;
     opacity: 0.9;
-    color: rgb(255, 255, 255);
+    color: white;
     
 }
 
@@ -289,11 +281,10 @@ h3 {
 }
 
 #Proj1 img {
-    display: block;
-    height: 100%;
-    
+    object-fit: cover;
     margin: 0 auto;
-    
+    max-width: 800px;
+    object-position: center;
     
     }
 
@@ -313,39 +304,22 @@ h3 {
 
 
 #Proj4 img{
-    /* background-image: url(../Pictures/david-pisnoy-S_ao-YqXl2w-unsplash.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #0765A2; */
     display: block;
    width: 100%;
    height: 100%;
-    /* max-width: 200px; */
     margin: 0 auto;
 }
 
 #Proj5 img{
-    /* background-image: url(../Pictures/anne-nygard-FTc0e1zLwzU-unsplash.jpg);
-    background-size: auto 150%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -50px;
-    background-color: #D1D1D1; */
     display: block;
     width: 100%;
     height: 100%;
-     /* max-width: 200px; */
     margin: 0 auto;
 }
-
-
- 
 
 footer {
     background-color: #766d91;
     opacity: 0.75;
-
 }
 
 h4 {
