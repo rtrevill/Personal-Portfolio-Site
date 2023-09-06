@@ -43,19 +43,21 @@ header {
 h1 {
     color: rgb(54, 8, 8);
     display: inline-block;
-    width: 550px;
+    width: 750px;
     margin: 0 0 0 50px;
     padding: 40px;
     z-index: 2;
     font-size: 3rem;
     /* text-shadow: 4px 4px 4px 4px pink; */
-    text-shadow: rgb(199, 243, 191) 2px 1px 10px;
+    text-shadow: rgb(243, 245, 243) 2px 1px 12px;
+    opacity: 0.8;
 }
 
 h2 {
     color: rgb(54, 8, 8);
     font-size: 2.5rem;
     text-shadow: 2px 2px rgb(170, 154, 175);
+    margin-left: 8px;
 }
 
 h4 {
@@ -136,12 +138,16 @@ h4 {
     margin: 0 25px;
 }
 
+.bio h2{
+    display: none;
+}
+
 #avatar {
     display: flex;
     box-sizing: border-box;
     margin: 0 20px;
     width: 35%;
-    flex: 0 0 400px;
+    flex: 0 0 350px;
     
     padding: 30px;
 }
@@ -375,7 +381,46 @@ address li {
 @media screen and (max-width: 1093px){
     .goals{ 
         order: 2;
-        columns: 2;
+        width: 100%;
     }
-  
+    .personal-goals{
+        width: 50%;
+    }
+    .professional-goals{
+        width: 50%;   
+    }
+}
+
+@media screen and (max-width: 850px){
+h1 {
+    display: block;
+    width: 400px;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 2px;
+    z-index: 3;
+}
+}
+
+@media screen and (max-width: 595px){
+    .aboutMe {
+        display: none;
+    }
+    .bio h2{
+        font-size: 2rem;
+        display: inline-block;
+        width: 170px;
+        float: left;
+        margin: 15px 20px;
+        border-bottom: 4px solid var(--border-color);
+    }
+    .bio {
+        padding-top: 15px;
+    }
 }
