@@ -42,7 +42,7 @@ header {
 
 h1 {
     color: rgb(54, 8, 8);
-    display: block;
+    display: inline-block;
     width: 550px;
     margin: 0 0 0 50px;
     padding: 40px;
@@ -370,4 +370,12 @@ footer img {
 address li {
     display: inline-block;
     margin: 0 20px;
+}
+
+@media screen and (max-width: 1093px){
+    .goals{ 
+        order: 2;
+        columns: 2;
+    }
+  
 }
